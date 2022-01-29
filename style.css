@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,600;1,400&family=Outfit:wght@200;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Bai Jamjuree";
+    font-size: 18px;
+}
+h2{
+    font-weight: 600;
+}
+p{
+    font-weight: 400;
+}
+ul{
+    list-style-type: none;
+}
+button{
+    padding: .9em 2.9em;
+    border-radius: 5em;
+}
+button:hover{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+
+}
+#header{
+    background-image: url("images/bg-header-desktop.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.header{
+    display: grid;
+    width:80% ;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    
+}
+.header .logo{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid hsl(171, 66%, 44%);
+    background: white;
+    color: hsl(171, 66%, 44%);
+    text-align: center;
+    padding: 10px;
+    margin:30px auto 10px auto;
+    font-size: 28px;
+    font-weight: 600;
+}
+.header h1{
+    margin-bottom: 2em;
+}
+.header p{
+    margin-top: .5em;
+    margin-bottom: 2em;
+
+}
+.header button{
+    color: white;
+    background:hsl(171, 66%, 44%) ;
+    border: none;
+    outline: none;
+    margin: auto 5px auto 5px;
+
+}
+.header button:nth-of-type(1){
+    background: hsl(233, 100%, 69%);
+}
+.hero .h2{
+    text-align: center;
+    margin-top: 5em;
+}
+.hero .p{
+    display: grid;
+    margin: .5em auto;
+    width: 80%;
+    text-align: center;
+}
+.hero .div{
+    display: flex;
+    justify-content: space-between;
+    margin: 4em auto;
+}
+.div .col-left{
+    width: 50%;
+}
+.col-left img{
+    width: 600px;
+}
+.div .col-right{
+    width: 30%;
+    margin-left: 3em;
+    margin-right: 7em;
+}
+.col-right li{
+    margin-bottom: 2em;
+    line-height: 1.7em; 
+}
+.col-right li h2{
+    margin-bottom: 10px;
+}
+.col-right li p{
+    font-weight: 200;
+    color:hsl(210, 10%, 33%);
+}
+.access .container{
+    display: grid;
+    width: 80%;
+    margin:2px auto;
+    text-align: center;
+}
+.access h2{
+    margin: 1em auto 0 auto;
+}
+.access p{
+    margin-top: .5em;
+    margin-bottom: 1.5em;
+}
+.super-change .h2 ,.p{
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: .5em auto;
+
+}
+
+.super-change .cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin:1em 5em;
+    text-align: center;
+
+}
+.super-change .cardbody{
+    margin-top: 1em;
+    width: 33%;
+    align-items: center;
+    padding: 2em;
+
+}
+.cardbody h2{
+    margin-bottom: 1em;
+}
+.cardbody p{
+    font-size: 18px;
+    color:hsl(210, 10%, 33%); ;
+}
+.cardbody img{
+    width: 30px;
+}
+.brand .container{
+    margin:2em 5em auto 5em;
+}
+.brand img{
+    padding:1em 2em;
+
+}
+.clipboard .container{
+    display: grid;
+    width:80% ;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5em;
+
+}
+.clipboard h1{
+    margin-bottom: .5em;
+}
+.clipboard button{
+    color: white;
+    background:hsl(171, 66%, 44%) ;
+    border: none;
+    outline: none;
+    margin: 3em 5px auto 5px;
+
+}
+.clipboard button:nth-of-type(1){
+    background: hsl(233, 100%, 69%);
+}
+footer{
+    background-color: hsl(201, 11%, 66%);
+    color: white;
+}
+footer .container{
+    display: flex;
+    justify-content: space-around;
+    width:90% ;
+    margin: 5em auto 1em auto;
+    padding: 1em;
+    cursor: pointer;
+}
+footer .logo{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid hsl(171, 66%, 44%);
+    background: white;
+    color: hsl(171, 66%, 44%);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+footer .source{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+footer .source li{
+    list-style: none;
+    cursor: pointer;
+}
+footer .source li:hover{
+    font-weight: bold;
+}
+footer .social img{
+    padding:0 1em;
+   
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:675px) {
+    
+    #header{
+        background-image: url("images/bg-header-mobile.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    .header{
+        display: grid;
+        width:70% ;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 5em;
+        
+    }
+    .header button{
+        text-align: center;
+        display: block;
+        margin:2em auto ;
+        padding: 1em 3em;
+        font-size: 16px;
+
+    }
+    .hero .div{
+        display: block;
+    }
+    .div .col-left{
+    width: 100%;
+    text-align: center;
+    }
+    .col-left img{
+        width: 80%;
+        margin: 2em;
+    }
+    .div .col-right{
+        width: 80%;
+        text-align: center;
+       
+    }
+    .hero{
+        margin: 0 .2em;
+    }
+    .access{
+        margin: 0 .2em;
+    }
+    .access img{
+        width: 80%;
+        text-align: center;
+        margin-left: 2em;
+    }
+    .super-change .cards{
+        display: block;
+    
+    }
+    .super-change .cardbody{
+        width: 95%;
+        
+    }
+    .brand .container{
+        text-align: center;
+        margin:2em 5em auto 5em;
+    }
+    .clipboard button{
+        text-align: center;
+        display: block;
+        margin:2em auto ;
+        padding: 1em 3em;
+        font-size: 18px;
+    }
+    footer .container{
+        display:block;
+        text-align: center;
+        width: 80%;
+        
+    }
+    footer .logo{
+        display: grid;
+        margin: 0 auto;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+
+    footer .source{
+        display: block;
+        margin:2em auto;
+    }
+    footer .source li{
+        list-style: none;
+        padding-bottom: 1em;
+    }
+    
+}
+
